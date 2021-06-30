@@ -5,7 +5,7 @@ from checkov.cloudformation.checks.resource.base_resource_check import BaseResou
 class EC2Tags(BaseResourceCheck):
     def __init__(self):
         name = "Ensure EC2 Instance configured with tags"
-        id = "CKV2_AWS_1001"
+        id = "CS_AWS_1001"
         supported_resources = ['AWS::EC2::Instance']
         # CheckCategories are defined in models/enums.py
         categories = [CheckCategories.CONVENTION]
